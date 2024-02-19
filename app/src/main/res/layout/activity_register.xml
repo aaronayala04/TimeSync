@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/newback">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sora_extrabold"
+        android:text="TimeSync"
+        android:textColor="@color/white"
+        android:textSize="55sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoheader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:text="Create an account"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:layout_gravity="center">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_extralight"
+            android:text="Please fill the input below"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:layout_height="270dp"
+        app:cardBackgroundColor="@color/indigo"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:id="@+id/signUpEmail"
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:hint="Email"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:padding="16dp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sora_thin"
+                android:textColorHint="@color/white"
+                android:background="@drawable/custom_input">
+            </EditText>
+
+            <EditText
+                android:id="@+id/signUpPassword"
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="16dp"
+                android:hint="Password"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:padding="16dp"
+                android:fontFamily="@font/sora_thin"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_input">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/signUpCPassword"
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:padding="16dp"
+                android:textSize="16dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/sora_thin"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_input">
+
+            </EditText>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp">
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="250dp"
+            android:layout_height="55sp"
+            android:layout_marginStart="80dp"
+            android:backgroundTint="@color/teal"
+            android:textSize="25sp"
+            android:fontFamily="@font/sora_medium"
+            android:text="Sign up"
+            android:textColor="@color/purple">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="690dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:textColor="@color/white"
+            android:text="Already have an account?" >
+
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:textColor="@color/teal"
+            android:text="Sign in" >
+
+
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.information"
+    android:background="@color/indigo">
+
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center">
+
+   <TextView
+       android:drawableLeft="@drawable/logoheader"
+       android:layout_width="wrap_content"
+       android:layout_marginBottom="12dp"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/sora_bold"
+       android:text="About us"
+       android:textColor="@color/white"
+       android:textSize="35sp" />
+
+</LinearLayout>
+
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="760dp"
+       android:layout_marginTop="90dp"
+       android:background="@drawable/white_background">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+
+
+         <HorizontalScrollView
+             android:layout_width="350dp"
+             android:layout_height="450dp"
+             android:layout_marginTop="30dp"
+             android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="320dp"
+                   android:layout_height="450dp"
+                   android:layout_marginEnd="16dp"
+                   android:backgroundTint="@color/green">
+
+               </com.google.android.material.card.MaterialCardView>
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="320dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginEnd="16dp"
+                   android:backgroundTint="@color/red">
+
+               </com.google.android.material.card.MaterialCardView>
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="320dp"
+                   android:layout_height="450dp"
+                   android:layout_marginEnd="16dp"
+                   android:backgroundTint="@color/blue">
+
+               </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+         </HorizontalScrollView>
+
+         <LinearLayout
+             android:layout_marginTop="40dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Journey"
+                android:textColor="@color/indigo"
+                android:fontFamily="@font/sora_bold"
+                android:textSize="34sp">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:text="TimeSync wasn’t born in a sprawling tech hub, it started as a simple solution to a common problem. Aaron Ayala, was a university student overwhelmed by the chaos of managing his course schedule, extracurricular activities, and part-time job. The existing apps were either too clunky or too rigid to handle the dynamic and often unpredictable life of a student. So, in the small room of his, the idea of TimeSync was sketched out on paper during a late-night study session."
+                android:textAlignment="center"
+                android:textSize="16sp">
+
+            </TextView>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Get In Touch"
+                android:textColor="@color/indigo"
+
+                android:fontFamily="@font/sora_bold"
+                android:textSize="34sp">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="For support, inquiries, or to share your TimeSync story, reach out to us at timesync@gmail.com"
+                android:fontFamily="@font/sora"
+                android:textSize="16sp">
+
+            </TextView>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora_bold"
+                android:text="       "
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+         </LinearLayout>
+
+      </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
