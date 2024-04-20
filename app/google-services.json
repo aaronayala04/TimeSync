@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "151223592794",
+    "firebase_url": "https://timesyncproject-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "timesyncproject",
     "storage_bucket": "timesyncproject.appspot.com"
   },
