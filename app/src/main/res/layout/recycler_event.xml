@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard2"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:outlineAmbientShadowColor="@color/teal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recDate"
+            android:text="24"
+            android:textColor="@color/indigo"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="@font/lato_bold"
+            android:src="@drawable/baseline_task_purple_24"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="30dp"
+            android:id="@+id/recDay"
+            android:text="Wednesday"
+            android:layout_below="@id/recDate"
+            android:fontFamily="@font/lato_regular"
+            android:textAlignment="center"
+            android:textColor="@color/indigo"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:id="@+id/recEvent"
+            android:text="Mathematics"
+            android:textColor="@color/indigo"
+            android:textSize="20sp"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@id/recDate"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recTime"
+            android:text="8"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/indigo"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/recDay"
+            android:layout_below="@id/recEvent"
+            android:layout_marginStart="20dp"
+            android:maxLines="1"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recPeriod"
+            android:text="PM"
+            android:layout_below="@id/recEvent"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/indigo"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/recTime"
+            android:layout_marginStart="10dp"
+            android:maxLines="1"
+            android:layout_marginBottom="12dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

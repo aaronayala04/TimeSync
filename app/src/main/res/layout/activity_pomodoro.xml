@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".PomodoroActivity">
+
+  <!-- Set Your Timer TextView -->
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:fontFamily="@font/sora_bold"
+      android:text="Set Your Timer"
+      android:textColor="@color/white"
+      android:textSize="35sp"
+      android:textStyle="bold"
+      android:layout_centerHorizontal="true" />
+
+  <!-- Linear Layout to wrap TextInputLayouts -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@+id/textView"
+      android:layout_marginTop="100dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginEnd="32dp">
+
+    <!-- Study Time TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_study"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/black">
+
+      <!-- Study Time EditText -->
+      <androidx.appcompat.widget.AppCompatEditText
+          android:drawableStart="@drawable/baseline_access_time_24"
+          android:drawablePadding="16dp"
+          android:id="@+id/et_study"
+          android:background="@drawable/custom_input_white"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Study Time in minute"
+          android:inputType="number"
+          android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Break Time TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_break"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white">
+
+      <!-- Break Time EditText -->
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/et_break"
+          android:drawableStart="@drawable/baseline_access_time_24"
+          android:drawablePadding="16dp"
+          android:background="@drawable/custom_input_white"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Break Time in minute"
+          android:inputType="number"
+          android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Intervals TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white">
+
+      <!-- Intervals EditText -->
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/et_round"
+          android:drawableStart="@drawable/baseline_access_time_24"
+          android:drawablePadding="16dp"
+          android:layout_width="match_parent"
+          android:background="@drawable/custom_input_white"
+          android:layout_height="wrap_content"
+          android:hint="Intervals"
+          android:inputType="number"
+          android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+  </LinearLayout>
+
+  <!-- Start Button -->
+  <TextView
+      android:id="@+id/tv_start"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="500dp"
+      android:background="@drawable/circular_white"
+      android:gravity="center"
+      android:text="Start"
+      android:textColor="@color/white"
+      android:textSize="25sp"
+      android:textStyle="bold" />
+
+</RelativeLayout>
