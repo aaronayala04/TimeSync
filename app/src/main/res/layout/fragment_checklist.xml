@@ -5,54 +5,55 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screens.checklist"
-    android:background="@color/indigo">
+    android:background="@drawable/home">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp"
         android:layout_marginBottom="12dp"
         android:fontFamily="@font/sora_bold"
         android:text="Checklist"
         android:textColor="@color/white"
         android:textSize="35sp" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_centerHorizontal="true"
-        app:cardCornerRadius="30dp"
-        android:layout_marginTop="100dp"
+    <androidx.cardview.widget.CardView
         android:layout_width="370dp"
-        android:layout_height="600dp">
-
-        <Button
-            android:id="@+id/createTaskBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginHorizontal="50dp"
-            android:backgroundTint="@color/light_green"
-            android:drawableLeft="@drawable/baseline_task_green_24"
-            android:fontFamily="@font/sora_medium"
-            android:text="Create Task"
-            android:textColor="@color/green"
-            android:textSize="34dp">
-        </Button>
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="30dp">
 
         <Button
             android:id="@+id/viewTaskBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
             android:layout_marginHorizontal="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"
-            android:backgroundTint="@color/light_green"
-            android:drawableLeft="@drawable/baseline_search_green_24"
-            android:fontFamily="@font/sora_medium"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/teal"
+            android:drawableLeft="@drawable/baseline_task_purple_24"
+            android:fontFamily="@font/lato_bold"
             android:text="View Task"
-            android:textColor="@color/green"
-            android:textSize="34dp">
-        </Button>
+            android:textColor="@color/indigo"
+            android:textSize="34dp"></Button>
 
-    </com.google.android.material.card.MaterialCardView>
+        <Button
+            android:id="@+id/setReminderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/teal"
+            android:drawableLeft="@drawable/baseline_timer_purple_24"
+            android:fontFamily="@font/lato_bold"
+            android:text="Set Reminder"
+            android:textColor="@color/indigo"
+            android:textSize="34dp"></Button>
+
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

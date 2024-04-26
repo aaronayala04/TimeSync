@@ -15,7 +15,7 @@
         android:layout_marginTop="404dp"
         android:text="Welcome to"
         android:textSize="28dp"
-        android:fontFamily="@font/sora"
+        android:fontFamily="@font/lato_regular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
     </TextView>
@@ -28,7 +28,7 @@
         android:text="TimeSync"
         android:textSize="65dp"
         android:textColor="@color/indigo"
-        android:fontFamily="@font/sora"
+        android:fontFamily="@font/lato_bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screens.pomodoro"
-    android:background="@color/indigo">
+    android:background="@drawable/home">
 
 
 
@@ -15,8 +15,10 @@
         android:gravity="center">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
             android:layout_marginBottom="12dp"
+            android:layout_marginTop="-2dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/sora_bold"
             android:text="Pomodoro Timer"
@@ -27,172 +29,64 @@
 
 
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
         android:layout_centerHorizontal="true"
         app:cardCornerRadius="30dp"
         android:layout_marginTop="100dp"
         android:layout_width="370dp"
-        android:layout_height="600dp">
+        android:layout_height="500dp"
+        android:elevation="12dp">
 
 
        <LinearLayout
            android:layout_width="wrap_content"
-           android:layout_height="wrap_content">
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
 
            <TextView
-               android:layout_width="350dp"
+               android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_marginTop="20dp"
-               android:fontFamily="@font/sora_bold"
-               android:text="Timer configuration"
+               android:layout_marginTop="40dp"
+               android:fontFamily="@font/sora_medium"
+               android:text="Welcome to the Focus Zone"
                android:textColor="@color/indigo"
-               android:textSize="35sp"
+               android:textSize="30sp"
+               android:layout_gravity="center"
                android:textAlignment="center"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="70dp"
+               android:fontFamily="@font/sora"
+               android:text="With a press of a button, you can set a timer to achieve your goal"
+               android:textColor="@color/indigo"
+               android:textSize="20sp"
+               android:layout_gravity="center"
+               android:textAlignment="center"/>
+
+
        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="370dp"
-            android:layout_height="465dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="130dp"
-            android:orientation="vertical"
-            android:padding="10dp">
+        <Button
+            android:layout_width="320dp"
+            android:id="@+id/goToPomodoro"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/light_green"
+            android:drawableLeft="@drawable/baseline_timer_green_24"
+            android:fontFamily="@font/sora_medium"
+            android:text="Start Timer"
+            android:textColor="@color/green"
+            android:textSize="34dp">
+
+        </Button>
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/sora"
-                    android:text="Focus Length"
-                    android:textSize="24dp">
-
-                </TextView>
-
-                <com.google.android.material.slider.Slider
-
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
-                    android:stepSize="5.0"
-                    android:valueFrom="5.0"
-                    android:valueTo="30.0"
-                    app:thumbColor="@color/indigo">
-
-                </com.google.android.material.slider.Slider>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/sora"
-                    android:text="Break length "
-                    android:textSize="25dp">
-
-                </TextView>
-
-                <com.google.android.material.slider.Slider
-
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
-                    android:stepSize="5.0"
-                    android:valueFrom="5.0"
-                    android:valueTo="30.0"
-                    app:thumbColor="@color/indigo">
-
-                </com.google.android.material.slider.Slider>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/sora"
-                    android:text="Intervals         "
-                    android:textSize="25dp">
-
-                </TextView>
-
-                <com.google.android.material.slider.Slider
-
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
-                    android:stepSize="1.0"
-                    android:valueFrom="1.0"
-                    android:valueTo="5.0"
-                    app:thumbColor="@color/indigo">
-
-                </com.google.android.material.slider.Slider>
 
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/sora"
-                    android:text="Notification "
-                    android:textSize="25dp">
-
-                </TextView>
-
-                <Switch
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="65dp">
-
-                </Switch>
-
-            </LinearLayout>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/light_green"
-                android:drawableLeft="@drawable/baseline_timer_green_24"
-                android:fontFamily="@font/sora_medium"
-                android:text="Start Timer"
-                android:textColor="@color/green"
-                android:textSize="34dp">
-
-            </Button>
-
-
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 
 
 

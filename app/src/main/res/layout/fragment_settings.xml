@@ -1,27 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home"
     tools:context=".screens.settings">
 
-    <!-- TODO: Update blank fragment layout -->
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Settings page"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/btnRemove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Remove Account" />
 
 
 
-</RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/white_background"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sora_bold"
+                android:text="Settings"
+                android:drawableStart="@drawable/baseline_settings_purple_24"
+                android:textColor="@color/indigo"
+                android:textSize="40sp"
+                android:textAlignment="center"/>
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Log Out"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal"
+                android:textColor="@color/indigo"
+                android:id="@+id/logOutBtn"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "20dp"/>
+
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Change Password"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal"
+                android:textColor="@color/indigo"
+                android:id="@+id/updateBtn"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "20dp"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Delete Account"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white"
+                android:id="@+id/deleteAccBtn"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "20dp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</ScrollView>

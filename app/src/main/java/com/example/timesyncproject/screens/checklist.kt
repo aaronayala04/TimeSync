@@ -2,13 +2,12 @@ package com.example.timesyncproject.screens
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.timesyncproject.R
+import androidx.fragment.app.Fragment
+import com.example.timesyncproject.ReminderActivity
 import com.example.timesyncproject.ToDoActivity
-import com.example.timesyncproject.UploadActivity
 import com.example.timesyncproject.databinding.FragmentChecklistBinding
 
 class checklist : Fragment() {
@@ -28,9 +27,9 @@ class checklist : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.createTaskBtn.setOnClickListener {
+        binding.setReminderBtn.setOnClickListener {
             // Start ToDoActivity when createTaskBtn is clicked
-            val intent = Intent(activity, UploadActivity::class.java)
+            val intent = Intent(activity, ReminderActivity::class.java)
             startActivity(intent)
         }
 

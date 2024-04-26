@@ -9,22 +9,22 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:textAlignment="center"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/sora_extrabold"
+        android:fontFamily="@font/lato_bold"
         android:text="TimeSync"
         android:textColor="@color/white"
         android:textSize="55sp" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logoheader"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp">
-
+        android:layout_marginTop="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_timeline_24">
     </ImageView>
 
 
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sora_semibold"
+            android:fontFamily="@font/lato_bold"
             android:text="Create an account"
             android:textColor="@color/white"
             android:textSize="35sp"
@@ -49,7 +49,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sora_extralight"
+            android:fontFamily="@font/lato_regular"
             android:text="Please fill the input below"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -65,7 +65,7 @@
         android:layout_centerHorizontal="true"
         android:layout_width="350dp"
         android:layout_centerInParent="true"
-        android:layout_height="270dp"
+        android:layout_height="260dp"
         app:cardBackgroundColor="@color/indigo"
         app:cardCornerRadius="20dp">
 
@@ -89,7 +89,7 @@
                 android:padding="16dp"
                 android:drawablePadding="10dp"
                 android:textColor="@color/white"
-                android:fontFamily="@font/sora_thin"
+                android:fontFamily="@font/lato_regular"
                 android:textColorHint="@color/white"
                 android:background="@drawable/custom_input">
             </EditText>
@@ -108,7 +108,7 @@
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="10dp"
                 android:padding="16dp"
-                android:fontFamily="@font/sora_thin"
+                android:fontFamily="@font/lato_regular"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:background="@drawable/custom_input">
@@ -129,7 +129,7 @@
                 android:padding="16dp"
                 android:textSize="16dp"
                 android:drawablePadding="10dp"
-                android:fontFamily="@font/sora_thin"
+                android:fontFamily="@font/lato_regular"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:background="@drawable/custom_input">
@@ -162,7 +162,7 @@
             android:layout_marginStart="80dp"
             android:backgroundTint="@color/teal"
             android:textSize="25sp"
-            android:fontFamily="@font/sora_medium"
+            android:fontFamily="@font/lato_regular"
             android:text="Sign up"
             android:textColor="@color/purple">
 
@@ -179,7 +179,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sora"
+            android:fontFamily="@font/lato_regular"
             android:textColor="@color/white"
             android:text="Already have an account?" >
 
@@ -192,7 +192,7 @@
             android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sora"
+            android:fontFamily="@font/lato_bold"
             android:textColor="@color/teal"
             android:text="Sign in" >
 

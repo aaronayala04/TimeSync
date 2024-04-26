@@ -14,8 +14,9 @@
     android:gravity="center">
 
    <TextView
-       android:drawableLeft="@drawable/logoheader"
-       android:layout_width="wrap_content"
+
+       android:layout_width="match_parent"
+       android:gravity="center"
        android:layout_marginBottom="12dp"
        android:layout_height="wrap_content"
        android:fontFamily="@font/sora_bold"
@@ -51,13 +52,14 @@
                 android:gravity="center_horizontal">
 
 
-               <com.google.android.material.card.MaterialCardView
+               <ImageView
                    android:layout_width="320dp"
                    android:layout_height="450dp"
                    android:layout_marginEnd="16dp"
-                   android:backgroundTint="@color/green">
+                   android:background="@drawable/introbg">
 
-               </com.google.android.material.card.MaterialCardView>
+
+               </ImageView>
 
                <com.google.android.material.card.MaterialCardView
                    android:layout_width="320dp"

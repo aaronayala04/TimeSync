@@ -24,12 +24,12 @@
             android:id="@+id/forgotTitle"
             android:layout_width="match_parent"
             android:gravity="center"
-            android:fontFamily="@font/sora_semibold"
-            android:layout_height="40dp"
+            android:fontFamily="@font/sora_extrabold"
+            android:layout_height="43dp"
             android:text="Forgot Password"
             android:drawableLeft="@drawable/baseline_close_24"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="30sp"
             app:layout_constraintTop_toTopOf="parent">
 
         </TextView>
@@ -70,7 +70,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="56dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/indigo"
 
             android:fontFamily="@font/sora"
             android:text="Reset"

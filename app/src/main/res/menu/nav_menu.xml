@@ -26,8 +26,8 @@
             android:title="Pomodoro Timer"/>
         <item
             android:id="@+id/nav_stats"
-            android:icon="@drawable/baseline_bar_chart_24"
-            android:title="Your Statistics"/>
+            android:icon="@drawable/baseline_cloud_purple_24"
+            android:title="Weather Updates"/>
 
     </group>
 

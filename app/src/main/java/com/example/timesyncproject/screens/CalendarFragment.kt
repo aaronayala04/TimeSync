@@ -1,10 +1,10 @@
 package com.example.timesyncproject.screens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.timesyncproject.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [calendar.newInstance] factory method to
+ * Use the [statistics.newInstance] factory method to
  * create an instance of this fragment.
  */
-class calendar : Fragment() {
+class CalendarFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -45,12 +45,12 @@ class calendar : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment calendar.
+         * @return A new instance of fragment statistics.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            calendar().apply {
+            CalendarFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
